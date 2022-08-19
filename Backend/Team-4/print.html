@@ -1,0 +1,41 @@
+<html>
+    <head>
+        <title>
+            Print 
+        </title>
+        <style>
+            #np{
+                background-color: white;
+            margin-top: 90px;
+            margin-left: 400px;
+            padding:10px;
+            border-radius: 8px;
+            width:90px;
+            font-size: 15px;
+            cursor: pointer;
+        }
+        #file{ 
+            background-color: white;
+            margin-top: 90px;
+            margin-left: 950px;
+            padding:10px;
+            border-radius: 8px;
+            width:90px;
+            font-size: 15px;
+            cursor: pointer;
+        }
+        
+        
+        @media print{
+           .container-fluid,#np,#file {
+                display:none;
+            }
+        }
+        </style>
+        
+    </head>
+
+</html>
+    
+<button onclick="window.print();"id="np">print</button>
+<button id="file" onclick="window.location.href='http://127.0.0.1:8000/upload/';">upload</button>
